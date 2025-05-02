@@ -2219,8 +2219,6 @@ button:active {
   box-shadow: 0 0 20px rgba(127, 0, 255, 0.6);
 }
 
-
-
 .custom-packages-section .card-header-text {
   font-size: 1.6rem;
   font-weight: 700;
@@ -2263,4 +2261,53 @@ button:active {
 
 .custom-packages-section .card-cta-button:hover {
   background-color: #5e1e6a;
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+  .custom-packages-section .custom-card {
+    width: 48%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .custom-packages-section .card-header-text {
+    font-size: 1.4rem;
+  }
+  .custom-packages-section .card-price {
+    font-size: 1.2rem;
+  }
+  .custom-packages-section .card-time {
+    font-size: 1.1rem;
+  }
+  .custom-packages-section .card-description {
+    font-size: 1.1rem;
+  }
+  .custom-packages-section .card-cta-button {
+    font-size: 1.2rem;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-packages-section .custom-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .custom-packages-section .card-header-text {
+    font-size: 1.2rem;
+  }
+  .custom-packages-section .card-price {
+    font-size: 1rem;
+  }
+  .custom-packages-section .card-time {
+    font-size: 1rem;
+  }
+  .custom-packages-section .card-description {
+    font-size: 1rem;
+  }
+  .custom-packages-section .card-cta-button {
+    font-size: 1rem;
+    padding: 8px 0;
+  }
 }
