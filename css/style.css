@@ -2027,3 +2027,240 @@ button:active {
   .cta-button button:hover {
     background-color: #6c2287;
   }
+
+  .package-card {
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+/*==================TEST========================*/
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(128, 0, 128, 0.5);
+}
+
+.package-card:hover::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: transparent;
+    border: 2px solid #7A288A;
+    border-radius: 10px;
+    z-index: -1;
+    box-shadow: 0 0 20px #7A288A;
+}
+
+
+/* From Uiverse.io by satyamchaudharydev */ 
+.card {
+    --primary-clr: #1C204B;
+    --dot-clr: #BBC0FF;
+    --play: hsl(195, 74%, 62%);
+    width: 900px;
+    height: 300px;
+    border-radius: 10px;
+   }
+   
+   .card {
+    font-family: "Arial";
+    color: #fff;
+    display: grid;
+    cursor: pointer;
+    grid-template-rows: 50px 1fr;
+   }
+   
+   .card:hover .img-section {
+    transform: translateY(1em);
+   }
+   
+   .card-desc {
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    top: -10px;
+    display: grid;
+    gap: 10px;
+    background: var(--primary-clr);
+   }
+   
+   .card-time {
+    font-size: 1.7em;
+    font-weight: 500;
+   }
+   
+   .img-section {
+    transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: hsl(195, 74%, 62%);
+   }
+   
+   .card-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+   }
+   
+   .card-title {
+    flex: 1;
+    font-size: 0.9em;
+    font-weight: 500;
+   }
+   
+   .card-menu {
+    display: flex;
+    gap: 4px;
+    margin-inline: auto;
+   }
+   
+   .card svg {
+    float: right;
+    max-width: 100%;
+    max-height: 100%;
+   }
+   
+   .card .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--dot-clr);
+   }
+   
+   .card .recent {
+    line-height: 0;
+    font-size: 0.8em;
+   }
+
+   .section {
+    padding: 50px 0;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .section-subtext {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    margin: 20px;
+    width: calc(25% - 20px);
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }
+
+/* New styles for custom packages section */
+.custom-packages-section .section-header {
+  margin-bottom: 40px;
+}
+
+.custom-packages-section .section-title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #7a288a;
+}
+
+.custom-packages-section .section-subtext {
+  font-size: 1.8rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.custom-packages-section .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.custom-packages-section .custom-card {
+  background: #fff;
+  width: 294px;
+  height: 308px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(127, 0, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.custom-packages-section .custom-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(127, 0, 255, 0.6);
+}
+
+
+
+.custom-packages-section .card-header-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 10px 0 5px 0;
+  color: #4b0082;
+}
+
+.custom-packages-section .card-price {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #7a288a;
+  margin-bottom: 5px;
+}
+
+.custom-packages-section .card-time {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.custom-packages-section .card-description {
+  flex-grow: 1;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.custom-packages-section .card-cta-button {
+  background-color: #7a288a;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-packages-section .card-cta-button:hover {
+  background-color: #5e1e6a;
+}
